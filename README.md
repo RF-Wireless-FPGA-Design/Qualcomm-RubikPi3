@@ -22,6 +22,12 @@ A hands-on companion to [NYCU RF Wireless FPGA Design — EECM30152](https://rf-
 | 7 | [5G and O-RAN](five-g-and-oran/README.md) | Explain architecture and prototype a telemetry application | Planned |
 | 8 | [Capstone projects](capstone-projects/README.md) | Demonstrate an evidence-backed end-to-end system | Planned |
 
+## Examples
+
+| Example | What it shows |
+| --- | --- |
+| [Knowledge graph example (Tim)](knowledge-graph-example-tim/README.md) | Personal research knowledge graph with a local LLM chat (Ollama + `qwen3.5:2b`, CPU only): setup from a fresh board, running, and customising it with your own profile and papers |
+
 ## Scope and conventions
 
 - Rubik Pi 3 is the Linux/edge-compute companion in this course. Do not imply that it executes FPGA bitstreams, replaces RFSoC converters, or provides a cellular base station by itself.

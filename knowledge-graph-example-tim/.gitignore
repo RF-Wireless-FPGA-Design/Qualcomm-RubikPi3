@@ -1,0 +1,8 @@
+node_modules/
+app/dist/
+app/public/graph.json
+knowledge/export/
+*.log
+.DS_Store
+# PDFs of other people's papers should not be published; link to them with `url:` instead.
+*.pdf

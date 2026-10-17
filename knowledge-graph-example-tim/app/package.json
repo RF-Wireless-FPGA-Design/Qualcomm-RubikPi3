@@ -1,0 +1,30 @@
+{
+  "name": "rubik-knowledge-graph",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Personal research knowledge graph with a local-LLM (Ollama) chat, built for the RUBIK Pi 3",
+  "scripts": {
+    "build:graph": "tsx scripts/build-graph.ts",
+    "dev": "npm run build:graph && (GRAPH_PATH=public/graph.json PORT=8787 node server/server.ts & vite)",
+    "build": "npm run build:graph && tsc --noEmit && vite build",
+    "start": "node server/server.ts",
+    "serve": "npm run build && npm start",
+    "typecheck": "tsc --noEmit",
+    "draft:paper": "node scripts/draft-paper.ts"
+  },
+  "dependencies": {
+    "force-graph": "1.52.0",
+    "marked": "18.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.21",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3",
+    "vite": "7.3.6",
+    "yaml": "2.8.3"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
